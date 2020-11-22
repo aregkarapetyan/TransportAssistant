@@ -4,7 +4,7 @@ Created by Areg Karapetyan
 
 class QueueArray:
     def __init__(self,size):
-        # Create empty deque and fill with 'None' using the given size of the list
+        # Create empty queue and fill with 'None' using the given size of the list
         self.deque = []
         for i in range(size):
             self.deque.append(None)
@@ -41,12 +41,12 @@ class QueueArray:
         return len(self.deque)-1
 
     def resize(self):
-        # Resizes the queue after the size limit is reached by adding "None" elements, so that the deque will double its size
+        # Resizes the queue after the size limit is reached by adding "None" elements, so that the queue will double its size
         b = []
         for i in range(len(self.deque)):
             b.append(None)
         self.deque = self.deque + b
 
     def print_deq(self):
-        # Prints the deque
+        # Prints the queue
         print (self.deque)
