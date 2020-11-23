@@ -22,7 +22,7 @@ print("Choose number to check your desired data structure"
       "\n 6.HashMap"
       "\n 7.HashSet")
 
-def choice():
+def choicer():
     choice = input("Input here: ")
 
     if choice == "1":
@@ -186,5 +186,5 @@ def choice():
         print(HS.size())
     else:
         print("Input number between 1 and 7")
-        choice()
-choice()
+        choicer()
+choicer()
