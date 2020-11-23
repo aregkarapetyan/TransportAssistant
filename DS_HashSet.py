@@ -26,7 +26,7 @@ class HashSet():
             index = self._hash_str(element)
         else:
             index = self._hash(element)
-        print(index)
+        print(element,"->",index)
         if (self._hashtable[index] == None):
             self._hashtable[index] = Node(element)
         else:
@@ -44,7 +44,10 @@ class HashSet():
         return False
 
     def remove(self, element):
-        index = self._hash(element)
+        if isinstance(element,str) is True:
+            index = self._hash_str(element)
+        else:
+            index = self._hash(element)
         n = self._hashtable[index]
         p = None
         while (n != None):
@@ -91,7 +94,6 @@ class HashSet():
                     e = e.next
 
     def print(self):
-        print("printing hashset elements")
         for e in self._hashtable:
             while (e != None):
                 print(e.data)
