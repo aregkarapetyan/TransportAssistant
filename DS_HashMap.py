@@ -9,13 +9,12 @@ class Entry():
 
 
 class HashMap():
-    def __init__(self):
-        self._capacity = 26
-        self._hashtable = [None] * self._capacity * 10
+    def __init__(self,size):
+        self._hashtable = [None] * size
         self._size = 0
 
     def _hash(self, element):
-        return ord(element[0]) % self._capacity
+        return element
 
     def put(self, key, value):
         index = self._hash(key)
@@ -44,11 +43,11 @@ class HashMap():
         for i in range(index, len(self._hashtable)):
             if (self._hashtable[i] != None):
                 if key == self._hashtable[i].key:
-                    print(key, " is present in the address book")
+                    print(key, " is present in the hash table")
                     return True
                     break
             else:
-                print(key, " is not present in the address book")
+                print(key, " is not present in the hash table")
                 return False
 
     def remove(self, key):
@@ -56,22 +55,22 @@ class HashMap():
         for i in range(index, len(self._hashtable)):
             if (self._hashtable[i] != None):
                 if key == self._hashtable[i].key:
-                    print("Removed ",self._hashtable[i].value,"from Address Book")
+                    print("Removed ",self._hashtable[i].value,"from hash table")
                     self._hashtable[i] = None
                     break
             else:
-                print ("Such address entry was not found")
+                print ("Such entry was not found")
                 return None
 
     def size(self):
         return self._size
 
-    def print(self):
-        print("printing hashset elements")
-        for e in self._hashtable:
-            while (e != None):
-                print(e.data)
-                e = e.next
+    # def print(self):
+    #     print("printing hashset elements")
+    #     for e in self._hashtable:
+    #         while (e != None):
+    #             print(e.value)
+    #             e = e.next()
 
     def __iter__(self):
         for i in range(len(self._hashtable)):

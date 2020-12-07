@@ -124,5 +124,9 @@ bus_str_LL_14 = []
 bus_str_LL_15 = []
 
 bus_str = [bus_str_0,bus_str_1,bus_str_2,bus_str_3,bus_str_4,bus_str_5,bus_str_6,bus_str_7,bus_str_8,bus_str_9,bus_str_10,bus_str_11,bus_str_12,bus_str_13,bus_str_14,bus_str_15]
-bus_str_LL = [bus_str_LL_0,bus_str_LL_1,bus_str_LL_2,bus_str_LL_3,bus_str_LL_4,bus_str_LL_5,bus_str_LL_6,bus_str_LL_7,bus_str_LL_8,bus_str_LL_9,bus_str_LL_10,bus_str_LL_11,bus_str_LL_12,bus_str_LL_13,bus_str_LL_14,bus_str_LL_15]
-
+bus_str_LL_temp = [bus_str_LL_0,bus_str_LL_1,bus_str_LL_2,bus_str_LL_3,bus_str_LL_4,bus_str_LL_5,bus_str_LL_6,bus_str_LL_7,bus_str_LL_8,bus_str_LL_9,bus_str_LL_10,bus_str_LL_11,bus_str_LL_12,bus_str_LL_13,bus_str_LL_14,bus_str_LL_15]
+bus_str_LL=[]
+bus_str_Stack_temp = [bus_str_LL_0,bus_str_LL_1,bus_str_LL_2,bus_str_LL_3,bus_str_LL_4,bus_str_LL_5,bus_str_LL_6,bus_str_LL_7,bus_str_LL_8,bus_str_LL_9,bus_str_LL_10,bus_str_LL_11,bus_str_LL_12,bus_str_LL_13,bus_str_LL_14,bus_str_LL_15]
+bus_str_Stack=[]
+bus_str_HM_temp = [bus_str_LL_0,bus_str_LL_1,bus_str_LL_2,bus_str_LL_3,bus_str_LL_4,bus_str_LL_5,bus_str_LL_6,bus_str_LL_7,bus_str_LL_8,bus_str_LL_9,bus_str_LL_10,bus_str_LL_11,bus_str_LL_12,bus_str_LL_13,bus_str_LL_14,bus_str_LL_15]
+bus_str_HM=[]
